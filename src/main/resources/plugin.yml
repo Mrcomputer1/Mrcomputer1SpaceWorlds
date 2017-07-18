@@ -1,0 +1,34 @@
+name: "Mrcomputer1SpaceWorlds"
+version: 1.0.0
+main: Mrcomputer1.SpaceWorlds.Mrcomputer1SpaceWorlds
+author: Mrcomputer1
+commands:
+  startplatform:
+    usage: "/startplatform"
+    description: "Place a dirt platform at your location."
+    permission: mrcomputer1spaceworlds.commands.startplatform
+  whatworld:
+    usage: "/whatworld"
+    description: "Gets the ID of the world"
+    permission: mrcomputer1spaceworlds.commands.whatworld
+permissions:
+  "mrcomputer1spaceworlds.*":
+    description: Gives you access to all Mrcomputer1 Space Worlds permissions.
+    children:
+      mrcomputer1spaceworlds.commands: true
+      mrcomputer1spaceworlds.commands.startplatform: true
+      mrcomputer1spaceworlds.commands.whatworld: true
+  "mrcomputer1spaceworlds.commands":
+    description: Gives you access to all Mrcomputer1 Space Worlds commands.
+    children:
+      mrcomputer1spaceworlds.commands.startplatform: true
+      mrcomputer1spaceworlds.commands.whatworld: true
+  "mrcomputer1spaceworlds.commands.startplatform":
+    description: Gives you access to /startplatform
+    default: true
+  "mrcomputer1spaceworlds.commands.whatworld":
+    description: Gives you access to /whatworld
+    default: true
+  "mrcomputer1spaceworlds.teleport":
+    description: Allows you to teleport between worlds.
+    default: true

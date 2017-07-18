@@ -1,0 +1,13 @@
+# How many worlds high can the player go?
+maxWorldID: 5
+# How many worlds low can the player go?
+minWorldID: -5
+
+# Blacklist worlds
+blacklist: [world_nether, world_the_end]
+
+# Message Format
+messageFormat: "&e[Mrcomputer1SpaceWorlds] $1"
+
+# Stars start at
+starsStartAt: 3
