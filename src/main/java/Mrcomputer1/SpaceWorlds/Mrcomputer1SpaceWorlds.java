@@ -69,6 +69,7 @@ public class Mrcomputer1SpaceWorlds extends JavaPlugin implements Listener{
 		}
 		saveWorlds();
 		Bukkit.getPluginCommand("startplatform").setExecutor(new CommandStartPlatform());
+		Bukkit.getPluginCommand("teleportworld").setExecutor(new CommandTeleportWorld(this));
 		Bukkit.getPluginCommand("whatworld").setExecutor(new CommandWhatWorld(this));
 	}
 	

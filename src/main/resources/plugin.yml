@@ -11,6 +11,10 @@ commands:
     usage: "/whatworld"
     description: "Gets the ID of the world"
     permission: mrcomputer1spaceworlds.commands.whatworld
+  teleportworld:
+    usage: "/teleportworld -OR- /teleportworld <id> [world]"
+    description: "Teleports you to world. Without args teleports you to the primary world."
+    permission: mrcomputer1spaceworlds.commands.teleportworld
 permissions:
   "mrcomputer1spaceworlds.*":
     description: Gives you access to all Mrcomputer1 Space Worlds permissions.
@@ -18,6 +22,7 @@ permissions:
       mrcomputer1spaceworlds.commands: true
       mrcomputer1spaceworlds.commands.startplatform: true
       mrcomputer1spaceworlds.commands.whatworld: true
+      mrcomputer1spaceworlds.commands.teleportworld: true
   "mrcomputer1spaceworlds.commands":
     description: Gives you access to all Mrcomputer1 Space Worlds commands.
     children:
@@ -29,6 +34,9 @@ permissions:
   "mrcomputer1spaceworlds.commands.whatworld":
     description: Gives you access to /whatworld
     default: true
+  "mrcomputer1spaceworlds.commands.teleportworld":
+    description: Gives you access to /teleportworld
+    default: false
   "mrcomputer1spaceworlds.teleport":
     description: Allows you to teleport between worlds.
     default: true
