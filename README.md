@@ -6,7 +6,7 @@ If you go below y:-8 you get teleported to a underground world.
 1. Place Mrcomputer1SpaceWorlds-x.x.x-SNAPSHOT.jar into your plugins folder
 2. Start and stop the server
 3. Configure the plugin in config.yml (ignore worlds.yml it is an internal file)
-4. Give players permissions if you disabled the opBasedPermissions option in config
+4. Configure permissions.
 5. Start the server
 
 ## Building
