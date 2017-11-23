@@ -24,15 +24,15 @@ JavaDoc: target/apidocs
 ## Configuring
 The config can be found in config.yml.
 
-`minWorldID: 5` You can go up five worlds.
+`maxWorldID: 5` You can go up five worlds.
 
-`maxWorldID: -5` You can go down five worlds.
+`minWorldID: -5` You can go down five worlds.
 
 `blacklist: [world_nether, world_the_end]` What worlds don't allow you to go up and down.
 
 `messageFormat: "[Mrcomputer1SpaceWorlds] $1"` Message format. $1 is the message
 
-`starsStarAt: 3` When do worlds start generating with stars.
+`starsStartAt: 3` When do worlds start generating with stars.
 
 ## Commands
 
